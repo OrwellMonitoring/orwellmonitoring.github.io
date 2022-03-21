@@ -21,6 +21,9 @@
       .gradient {
         background: linear-gradient(90deg, #40403E 0%, #40403E 100%);
       }
+      .gradient-2 {
+        background: linear-gradient(90deg, #40403E 0%, #FF5F03 100%);
+      }
       .clearfix::after {
         vertical-align: middle;
       }
@@ -34,7 +37,7 @@
   </head>
   <body class="leading-normal tracking-normal text-white gradient">
     <!--Nav-->
-    <nav id="header" class="fixed w-full z-30 top-0 text-white" style="background-color: #ffffff">
+    <nav id="header" class="fixed w-full z-30 top-0 text-white gradient">
       <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div class="pl-3 flex items-center">
           <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
@@ -55,32 +58,32 @@
         <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
           <ul class="list-reset lg:flex justify-end flex-1 items-center">
             <li class="mr-3">
-              <a class="inline-block py-2 px-4 text-gray font-bold no-underline" href="#project">Project</a>
+              <a class="inline-block py-2 px-4 text-orange font-bold no-underline" href="#project">Project</a>
             </li>
             <li class="mr-3">
-              <a class="inline-block py-2 px-4 text-gray font-bold no-underline" href="#team">Team</a>
+              <a class="inline-block py-2 px-4 text-orange font-bold no-underline" href="#team">Team</a>
             </li>
             <li class="mr-3">
-              <a class="inline-block py-2 px-4 text-gray font-bold no-underline" href="#documentation">Documentation</a>
+              <a class="inline-block py-2 px-4 text-orange font-bold no-underline" href="#documentation">Documentation</a>
             </li>
           </ul>
         </div>
       </div>
-      <hr class="border-b border-gray-200 my-0 py-0" />
+      <hr class="border-b border-gray-200 opacity-20 my-0 py-0" />
     </nav>
     <!--Hero-->
     <div class="pt-24">
       <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <!--Left Col-->
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-          <p class="uppercase tracking-loose w-full">IT - ATNoG | 5GASP project</p>
+          <p class="uppercase tracking-loose w-full text-orange">IT - ATNoG | 5GASP project</p>
           <h1 class="my-4 text-5xl font-bold leading-tight">
             Keep track of your 5G testbed
           </h1>
           <p class="leading-normal text-2xl mb-8">
             An open-source platform that allows you to build your own monitor tool like legos
           </p>
-          <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" onclick="window.location.href='#project';">
+          <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" onclick="window.location.href='#project';" style="background-color: #FF5F03;">
             Project Description
           </button>
         </div>
@@ -120,11 +123,11 @@
         <div class="flex flex-wrap">
           <div class="w-5/6 sm:w-1/2 p-6">
             <h3 class="text-3xl text-gray font-bold leading-none mb-3">
-              No centralized monitoring tools on the market 
+              Monitoring tools on the market 
             </h3>
             <p class="text-gray-600 mb-8">
               5G has changed the paradigm of networks, physical devices are now virtualized as common software and because of this, there is a need to monitor resources.
-In the current market monitoring tools are typically  limited and not centralized.
+In the current market monitoring tools are typically <span class="text-orange">limited and not centralized</span>.
               <br />
               <br />
             </p>
@@ -143,7 +146,7 @@ In the current market monitoring tools are typically  limited and not centralize
                 Our Goal
               </h3>
               <p class="text-gray-600 mb-8">
-                Orwell is a toolset capable of monitoring 5G infastructures - from networks to VNFs - and centralize this information. To meet the 5GASP monitorization
+                Orwell is a toolset <span class="text-orange">capable of monitoring 5G infastructures</span> - from networks to VNFs - <span class="text-orange">and centralize this information</span>. To meet the 5GASP monitorization
                 standards, this is done using a Prometheus database, integrated with Grafana to create user-friendly views.
                 <br />
                 <br />
@@ -169,8 +172,10 @@ In the current market monitoring tools are typically  limited and not centralize
             <img src="assets/direito.png" alt="Advisor" width="400" height="400">
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <div class="flex items-center justify-center">
-              <h3 class="text-gray font-bold">Advisor</h3>
+            <div class="items-center justify-center text-center">
+              <h3 class="text-orange font-bold">Advisor</h3>
+              <p class="text-gray font-bold">Rafael Direito</p>
+              <p class="text-gray font-bold">rafael.neves.direito@ua.pt</p>
             </div>
           </div>
         </div>
@@ -179,8 +184,10 @@ In the current market monitoring tools are typically  limited and not centralize
             <img src="assets/dgomes.jpeg" alt="Advisor" width="400" height="400">
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <div class="flex items-center justify-center">
-              <h3 class="text-gray font-bold">Advisor</h3>
+            <div class="items-center justify-center text-center">
+              <h3 class="text-orange font-bold">Advisor</h3>
+              <p class="text-gray font-bold">Diogo Gomes</p>
+              <p class="text-gray font-bold">dgomes@ua.pt</p>
             </div>
           </div>
         </div>
@@ -192,8 +199,10 @@ In the current market monitoring tools are typically  limited and not centralize
             <img src="assets/pduarte.jpeg" alt="Team Manager" width="400" height="400">
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <div class="flex items-center justify-center">
-              <h3 class="text-gray font-bold">Team Manager</h3>
+            <div class="items-center justify-center text-center">
+              <h3 class="text-orange font-bold">Team Manager</h3>
+              <p class="text-gray font-bold">Pedro Duarte</p>
+              <p class="text-gray font-bold">pedro.dld@ua.pt</p>
             </div>
           </div>
         </div>
@@ -202,18 +211,10 @@ In the current market monitoring tools are typically  limited and not centralize
             <img src="assets/gleal.jpeg" alt="Product Owner" width="400" height="400">
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <div class="flex items-center justify-center">
-              <h3 class="text-gray font-bold">Product Owner</h3>
-            </div>
-          </div>
-        </div>
-        <div class="w-full md:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
-          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-            <img src="assets/vregal.jpeg" alt="DevOps" width="400" height="400">
-          </div>
-          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <div class="flex items-center justify-center">
-              <h3 class="text-gray font-bold">DevOps</h3>
+            <div class="items-center justify-center text-center">
+              <h3 class="text-orange font-bold">Product Owner</h3>
+              <p class="text-gray font-bold">Gonçalo Leal</p>
+              <p class="text-gray font-bold">goncalolealsilva@ua.pt</p>
             </div>
           </div>
         </div>
@@ -222,14 +223,28 @@ In the current market monitoring tools are typically  limited and not centralize
             <img src="assets/serras.jpeg" alt="Architect" width="400" height="400">
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <div class="flex items-center justify-center">
-              <h3 class="text-gray font-bold">Architect</h3>
+            <div class="items-center justify-center text-center">
+              <h3 class="text-orange font-bold">Architect</h3>
+              <p class="text-gray font-bold">Alexandre Serras</p>
+              <p class="text-gray font-bold">alexandreserras@ua.pt</p>
             </div>
           </div>
         </div>
+        <div class="w-full md:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+            <img src="assets/vregal.jpeg" alt="DevOps" width="400" height="400">
+          </div>
+          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+            <div class="items-center justify-center text-center">
+              <h3 class="text-orange font-bold">DevOps</h3>
+              <p class="text-gray font-bold">Vasco Regal</p>
+              <p class="text-gray font-bold">vascoregal24@ua.pt</p>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </section>
-
 
     <!--- DOCUMENTATION SECTION START -->
     <section class="bg-white py-8" id="documentation">
@@ -252,10 +267,10 @@ In the current market monitoring tools are typically  limited and not centralize
               <table class="table-auto shadow-md sm:rounded-lg">
                 <thead class="bg-gray-50 dark:bg-gray-700">
                   <tr>
-                    <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                    <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray uppercase dark:text-gray-400">
                       Name
                     </th>
-                    <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                    <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray uppercase dark:text-gray-400">
                       Date
                     </th>
                     <th scope="col" class="relative py-3 px-6">
