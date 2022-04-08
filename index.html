@@ -10,6 +10,7 @@
     <meta name="description" content="Monitoring Tool For 5G Testbeds" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.1/dist/flowbite.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Replace with your tailwind.css once created-->
@@ -36,6 +37,11 @@
       }
       .text-white {
         color: #ffffff;
+      }
+      .calendar-item:hover {
+        border-style: solid;
+        border-width: 3px;
+        border-color: #FF5F03;
       }
     </style>
   </head>
@@ -174,10 +180,10 @@ In the current market monitoring tools are typically <span class="text-orange">l
         <div class="w-full mb-4">
           <div class="h-1 mx-auto w-64 my-0 py-0 rounded-t" style="background: #FF5F03;"></div>
         </div>
-        <div class="w-full md:w-1/4 sm:w-0/4 p-6 flex flex-col flex-grow flex-shrink">
+        <div class="w-full sm:w-0/4 md:w-0/2 lg:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
           
         </div>
-        <div class="w-full md:w-1/4 sm:w-4/4 p-6 flex flex-col flex-grow flex-shrink">
+        <div class="w-full sm:w-4/4 md:w-1/2 lg:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
           <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
             <img src="assets/direito.png" alt="Advisor" width="400" height="400" style="margin: auto;">
           </div>
@@ -185,11 +191,11 @@ In the current market monitoring tools are typically <span class="text-orange">l
             <div class="items-center justify-center text-center">
               <h3 class="text-2xl text-orange font-bold">Advisor</h3>
               <p class="text-gray font-bold">Rafael Direito</p>
-              <p class="text-sm text-gray font-bold"><a href="mailto:rafael.neves.direito@ua.pt">rafael.neves.direito@ua.pt</a></p>
+              <p class="text-sm text-gray"><a href="mailto:rafael.neves.direito@ua.pt">rafael.neves.direito@ua.pt</a></p>
             </div>
           </div>
         </div>
-        <div class="w-full md:w-1/4 sm:w-4/4 p-6 flex flex-col flex-grow flex-shrink">
+        <div class="w-full sm:w-4/4 md:w-1/2 lg:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
           <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
             <img src="assets/dgomes.jpeg" alt="Advisor" width="400" height="400" style="margin: auto;">
           </div>
@@ -197,14 +203,14 @@ In the current market monitoring tools are typically <span class="text-orange">l
             <div class="items-center justify-center text-center">
               <h3 class="text-2xl text-orange font-bold">Advisor</h3>
               <p class="text-gray font-bold">Diogo Gomes</p>
-              <p class="text-sm text-gray font-bold"><a href="mailto:dgomes@ua.pt">dgomes@ua.pt</a></p>
+              <p class="text-sm text-gray"><a href="mailto:dgomes@ua.pt">dgomes@ua.pt</a></p>
             </div>
           </div>
         </div>
-        <div class="w-full md:w-1/4 sm:w-0/4 p-6 flex flex-col flex-grow flex-shrink">
+        <div class="w-full sm:w-0/4 md:w-0/2 lg:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
           
         </div>
-        <div class="w-full md:w-1/4 sm:w-4/4 p-6 flex flex-col flex-grow flex-shrink">
+        <div class="w-full sm:w-4/4 md:w-1/2 lg:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
           <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
             <img src="assets/pduarte.jpeg" alt="Team Manager" width="400" height="400" style="margin: auto;">
           </div>
@@ -212,12 +218,12 @@ In the current market monitoring tools are typically <span class="text-orange">l
             <div class="items-center justify-center text-center">
               <h3 class="text-2xl text-orange font-bold">Team Manager</h3>
               <p class="text-gray font-bold">Pedro Duarte</p>
-              <p class="text-sm text-gray font-bold"><a href="mailto:pedro.dld@ua.pt">pedro.dld@ua.pt</a></p>
+              <p class="text-sm text-gray"><a href="mailto:pedro.dld@ua.pt">pedro.dld@ua.pt</a></p>
               <h3 class="text-3xl text-gray font-bold"><a href="https://github.com/PedroDuarte536"><i class="fa-brands fa-github"></i></a> <a href="https://www.linkedin.com/in/pedro-duarte-4647891b7/"><i class="fa-brands fa-linkedin"></i></a></h3>
             </div>
           </div>
         </div>
-        <div class="w-full md:w-1/4 sm:w-4/4 p-6 flex flex-col flex-grow flex-shrink">
+        <div class="w-full sm:w-4/4 md:w-1/2 lg:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
           <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
             <img src="assets/gleal.jpeg" alt="Product Owner" width="400" height="400" style="margin: auto;">
           </div>
@@ -225,12 +231,12 @@ In the current market monitoring tools are typically <span class="text-orange">l
             <div class="items-center justify-center text-center">
               <h3 class="text-2xl text-orange font-bold">Product Owner</h3>
               <p class="text-gray font-bold">Gonçalo Leal</p>
-              <p class="text-sm text-gray font-bold"><a href="mailto:goncalolealsilva@ua.pt">goncalolealsilva@ua.pt</a></p>
+              <p class="text-sm text-gray"><a href="mailto:goncalolealsilva@ua.pt">goncalolealsilva@ua.pt</a></p>
               <h3 class="text-3xl text-gray font-bold"><a href="https://github.com/goncalo-leal"><i class="fa-brands fa-github"></i></a> <a href="https://www.linkedin.com/in/goncalo-leal/"><i class="fa-brands fa-linkedin"></i></a></h3>
             </div>
           </div>
         </div>
-        <div class="w-full md:w-1/4 sm:w-4/4 p-6 flex flex-col flex-grow flex-shrink">
+        <div class="w-full sm:w-4/4 md:w-1/2 lg:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
           <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
             <img src="assets/serras.jpeg" alt="Architect" width="400" height="400" style="margin: auto;">
           </div>
@@ -238,12 +244,12 @@ In the current market monitoring tools are typically <span class="text-orange">l
             <div class="items-center justify-center text-center">
               <h3 class="text-2xl text-orange font-bold">Architect</h3>
               <p class="text-gray font-bold">Alexandre Serras</p>
-              <p class="text-sm text-gray font-bold"><a href="mailto:alexandreserras@ua.pt">alexandreserras@ua.pt</a></p>
+              <p class="text-sm text-gray"><a href="mailto:alexandreserras@ua.pt">alexandreserras@ua.pt</a></p>
               <h3 class="text-3xl text-gray font-bold"><a href="https://github.com/alexandreserras"><i class="fa-brands fa-github"></i></a> <a href="https://www.linkedin.com/in/alexandre-serras-48083b236/"><i class="fa-brands fa-linkedin"></i></a></h3>
             </div>
           </div>
         </div>
-        <div class="w-full sm:w-4/4 md:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
+        <div class="w-full sm:w-4/4 md:w-1/2 lg:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
           <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
             <img src="assets/vregal.jpeg" alt="DevOps" width="400" height="400" style="margin: auto;">
           </div>
@@ -251,7 +257,7 @@ In the current market monitoring tools are typically <span class="text-orange">l
             <div class="items-center justify-center text-center">
               <h3 class="text-2xl text-orange font-bold">DevOps</h3>
               <p class="text-gray font-bold">Vasco Regal</p>
-              <p class="text-sm text-gray font-bold"><a href="mailto:vascoregal24@ua.pt">vascoregal24@ua.pt</a></p>
+              <p class="text-sm text-gray"><a href="mailto:vascoregal24@ua.pt">vascoregal24@ua.pt</a></p>
               <h3 class="text-3xl text-gray font-bold"><a href="https://github.com/VascoRegal"><i class="fa-brands fa-github"></i></a> <a href="https://www.linkedin.com/in/vasco-regal-0b5848236/?trk=public_profile_samename-profile&originalSubdomain=pt"><i class="fa-brands fa-linkedin"></i></a></h3>
             </div>
           </div>
@@ -261,7 +267,7 @@ In the current market monitoring tools are typically <span class="text-orange">l
     </section>
 
     <!--- DOCUMENTATION SECTION START -->
-    <section class="bg-white py-8" id="deliverables">
+    <section class="bg-white border-b py-8" id="deliverables">
       <div class="container mx-auto flex flex-wrap pt-4 pb-12">
         <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray">
           Deliverables
@@ -273,7 +279,7 @@ In the current market monitoring tools are typically <span class="text-orange">l
           <div class="mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
 
-        <div class="w-full sm:w-4/4 md:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
+        <div class="w-full sm:w-4/4 md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
           <a href="https://raw.githubusercontent.com/OrwellMonitoring/orwellmonitoring.github.io/main/docs/proposal.pdf" target="_blank">
             <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
               <div class="items-center justify-center text-center">
@@ -284,7 +290,7 @@ In the current market monitoring tools are typically <span class="text-orange">l
           </a>
         </div>
 
-        <div class="w-full sm:w-4/4 md:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
+        <div class="w-full sm:w-4/4 md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
           <a href="https://raw.githubusercontent.com/OrwellMonitoring/orwellmonitoring.github.io/main/docs/ORWELL-M1.pdf" target="_blank">
             <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
               <div class="items-center justify-center text-center">
@@ -295,7 +301,7 @@ In the current market monitoring tools are typically <span class="text-orange">l
           </a>
         </div>
 
-        <div class="w-full sm:w-4/4 md:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
+        <div class="w-full sm:w-4/4 md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
           <a href="https://raw.githubusercontent.com/OrwellMonitoring/orwellmonitoring.github.io/main/docs/ORWELL-M2.pdf" target="_blank">
             <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
               <div class="items-center justify-center text-center">
@@ -309,6 +315,49 @@ In the current market monitoring tools are typically <span class="text-orange">l
     </section>
     <!--- DOCUMENTATION SECTION END -->
 
+    <section class="bg-white py-8" id="calendar">
+      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray">
+          Calendar
+        </h1>
+        <div class="w-full mb-4">
+          <div class="h-1 mx-auto w-64 my-0 py-0 rounded-t" style="background: #FF5F03;"></div>
+        </div>
+        <div class="w-full mb-4">
+          <div class="mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+      </div>
+      <div id="calendar_div" class="container mx-auto flex flex-wrap pt-4 pb-12">
+        <!-- CALENDAR -->
+        
+        <!-- /CALENDAR -->
+      </div>
+
+    </section>
+
+    <div id="small-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full">
+      <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+          <!-- Modal content -->
+          <div class="relative rounded-lg shadow dark:bg-gray-700" style="background-color: rgb(64, 64, 62);">
+              <!-- Modal header -->
+              <div class="flex justify-between items-start p-5 rounded-t border-b dark:border-gray-600">
+                  <h3 id="small-modal-title" class="text-xl font-bold text-white lg:text-2xl">
+                      
+                  </h3>
+                  <button onclick="modal.toggle()" type="button" class="text-white bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
+                  </button>
+              </div>
+              <!-- Modal body -->
+              <div class="p-6 space-y-6" id="small-modal-body">
+
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
+    <!-- VISUAL EFFECT -->
     <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
@@ -330,6 +379,8 @@ In the current market monitoring tools are typically <span class="text-orange">l
         </g>
       </g>
     </svg>
+    <!-- /VISUAL EFFECT -->
+
     <section class="container mx-auto text-center py-6 mb-12">
       <div class="container mx-auto px-8">
         <div class="w-full flex grid grid-cols-3 place-items-center flex-col md:flex-row py-6">
@@ -346,10 +397,11 @@ In the current market monitoring tools are typically <span class="text-orange">l
       </div>
     </section>
     
-    <!-- jQuery if you need it
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- FlowBite for modals -->
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+
     <script>
       var scrollpos = window.scrollY;
       var header = document.getElementById("header");
@@ -357,6 +409,84 @@ In the current market monitoring tools are typically <span class="text-orange">l
       var navaction = document.getElementById("navAction");
       var brandname = document.getElementById("brandname");
       var toToggle = document.querySelectorAll(".toggleColour");
+
+      var targetEl = document.getElementById("small-modal");
+      const modal = new Modal(targetEl);
+
+      var calendar = {
+          '29/03': [
+              "Explore Useful Tools",
+              "Architecture Design"
+          ],
+          "05/04": [
+              "Choose Implementation Technologies",
+              "Initialize Development Environment",
+              "Create Service Discovery API",
+              "Explore Testbed/Network-level Metrics",
+              "Explore 5G Core-level Metrics"
+          ],
+          "12/04": [
+              "Create OS Cloud Images With Monitoring Tools",
+              "Intrusive Tools via Cloud-Init",
+              "Intrusive Tools via Juju Charms",
+              "Explore Message Queues For Message Aggregation"
+          ],
+          "19/04": [
+              "Middleware Demo",
+              "Decouple Middleware's Data Source For Intrusive Tools",
+              "Implement Message Queues",
+              "Support Push and Pull Approaches"
+          ],
+          "26/04": [
+              "Explore Non-Intrusive APIs",
+              "Explore Network APIs"
+          ],
+          "03/05": [
+              "Accept Network And Non-Intrusive Data in Middleware",
+              "Explore Security Mechanisms"
+          ],
+          "10/05": [
+              "Implement Security Mechanisms",
+              "Implement Data Exporting",
+              "Create Development Environment For Frontends"
+          ],
+          "17/05": [
+              "Create Frontends",
+              "Create Requirements For Reports"
+          ],
+          "24/05": [
+              "Explore Alarms' Requirements",
+              "Explore Authorization Mechanisms For Grafana",
+              "Explore Middleware Minification"
+          ],
+          "31/05": [
+              "Create Technical Report",
+              "Implement Authorization In Grafana",
+              "Implement Alarms' Plugin"
+          ],
+          "14/06": [
+              "Rework Technical Report",
+              "Prepare students@deti Material"
+          ],
+          "21/06": [
+              "Prepare Final Presentation"
+          ]
+      };
+
+      $( document ).ready(function() {
+        var calendar_html = "";
+        Object.keys(calendar).forEach(element => {
+          calendar_html += '<div class="w-full sm:w-4/4 md:w-1/3 lg:w-1/4 p-6 flex flex-col flex-grow flex-shrink">';
+          calendar_html += '<div class="flex-none mt-auto bg-white rounded-b rounded-t overflow-hidden shadow p-6 calendar-item" style="background-color: rgba(64, 64, 62, 0.94); cursor: pointer;" onclick="calendar_item_click(\''+ element +'\')">';
+          calendar_html += '<div class="items-center justify-center text-center">';
+          calendar_html += '<h3 class="text-2xl text-white font-bold">'+ element +'</h3>';
+          calendar_html += '</div>';
+          calendar_html += '</div>';
+          calendar_html += '</div>';
+        });
+
+        $("#calendar_div").html(calendar_html);
+      });
 
       document.addEventListener("scroll", function () {
         /*Apply classes for slide in bar*/
@@ -393,6 +523,21 @@ In the current market monitoring tools are typically <span class="text-orange">l
           navcontent.classList.add("bg-gray-100");
         }
       });
+
+      function calendar_item_click(date) {
+        console.log(date)
+        if (calendar[''+date] != undefined){
+          var list = "";
+          calendar[''+date].forEach(element => {
+            list += '<p class="text-white"><span class="text-2xl text-orange font-bold">_</span> '+ element +'</p>';
+          });
+
+          $("#small-modal-title").html(date);
+          $("#small-modal-body").html(list);
+
+          modal.toggle();
+        }
+      }
     </script>
     <script>
       /*Toggle dropdown list*/
