@@ -43,6 +43,10 @@
         border-width: 3px;
         border-color: #FF5F03;
       }
+      .text-justify {
+        text-align: justify;
+        text-justify: inter-word;
+      }
     </style>
   </head>
   <body class="leading-normal tracking-normal text-white gradient" style="overflow-x: hidden;">
@@ -75,6 +79,12 @@
             </li>
             <li class="mr-3">
               <a class="inline-block py-2 px-4 text-white font-bold no-underline" href="#deliverables">Deliverables</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block py-2 px-4 text-white font-bold no-underline" href="#deliverables">Calendar</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block py-2 px-4 text-white font-bold no-underline" href="#deliverables">Development</a>
             </li>
             <li class="mr-3">
               <a class="inline-block py-2 px-4 text-white font-bold no-underline" href="https://orwellmonitoring.github.io/documentation/docs/">Docs</a>
@@ -335,6 +345,30 @@ In the current market monitoring tools are typically <span class="text-orange">l
 
     </section>
 
+    <section class="bg-white py-8" id="calendar">
+      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray">
+          Development
+        </h1>
+        <div class="w-full mb-4">
+          <div class="h-1 mx-auto w-64 my-0 py-0 rounded-t" style="background: #FF5F03;"></div>
+        </div>
+        <div class="w-full mb-4">
+          <div class="mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+      </div>
+      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+        <div class="mx-auto">
+          <img src="./assets/architecture.png" alt="Orwell's Architecture">
+        </div>
+        <div class="mx-auto w-full sm:w-4/4 md:w-1/2 pt-4">
+          <p class="text-gray-600 text-justify mb-8">Keeping modularity and scalability in mind, Orwell's Architecture is micro-service oriented. 
+            This architecture allows us to launch several instances of the same module and assure that everything keeps working as it should.</p>
+        </div>
+      </div>
+
+    </section>
+
     <div id="small-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full">
       <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
           <!-- Modal content -->
@@ -414,62 +448,161 @@ In the current market monitoring tools are typically <span class="text-orange">l
       const modal = new Modal(targetEl);
 
       var calendar = {
-          '29/03': [
-              "Explore Useful Tools",
-              "Architecture Design"
+          "29/03": [
+              {
+                "name": "Explore Useful Tools",
+                "done": true
+              },
+              {
+                "name": "Architecture Design",
+                "done": true
+              },
           ],
           "05/04": [
-              "Choose Implementation Technologies",
-              "Initialize Development Environment",
-              "Create Service Discovery API",
-              "Explore Testbed/Network-level Metrics",
-              "Explore 5G Core-level Metrics"
+              {
+                "name": "Choose Implementation Technologies",
+                "done": true
+              },
+              {
+                "name": "Initialize Development Environment",
+                "done": true
+              },
+              {
+                "name": "Create Service Discovery API",
+                "done": true
+              },
+              {
+                "name": "Explore Testbed/Network-level Metrics",
+                "done": true
+              },
+              {
+                "name": "Explore 5G Core-level Metrics",
+                "done": false
+              }
           ],
           "12/04": [
-              "Create OS Cloud Images With Monitoring Tools",
-              "Intrusive Tools via Cloud-Init",
-              "Intrusive Tools via Juju Charms",
-              "Explore Message Queues For Message Aggregation"
+              {
+                "name": "Create OS Cloud Images With Monitoring Tools",
+                "done": false
+              },
+              {
+                "name": "Intrusive Tools via Cloud-Init",
+                "done": true
+              },
+              {
+                "name": "Intrusive Tools via Juju Charms",
+                "done": true
+              },
+              {
+                "name": "Explore Message Queues For Message Aggregation",
+                "done": true
+              }
           ],
           "19/04": [
-              "Middleware Demo",
-              "Decouple Middleware's Data Source For Intrusive Tools",
-              "Implement Message Queues",
-              "Support Push and Pull Approaches"
+              {
+                "name": "Middleware Demo",
+                "done": true
+              },
+              {
+                "name": "Decouple Middleware's Data Source For Intrusive Tools",
+                "done": true
+              },
+              {
+                "name": "Implement Message Queues",
+                "done": true
+              },
+              {
+                "name": "Support Push and Pull Approaches",
+                "done": true
+              }
           ],
           "26/04": [
-              "Explore Non-Intrusive APIs",
-              "Explore Network APIs"
+              {
+                "name": "Explore Non-Intrusive APIs",
+                "done": false
+              },
+              {
+                "name": "Explore Network APIs",
+                "done": false
+              },
           ],
           "03/05": [
-              "Accept Network And Non-Intrusive Data in Middleware",
-              "Explore Security Mechanisms"
+              {
+                "name": "Accept Network And Non-Intrusive Data in Middleware",
+                "done": false
+              },
+              {
+                "name": "Explore Security Mechanisms",
+                "done": false
+              },
           ],
           "10/05": [
-              "Implement Security Mechanisms",
-              "Implement Data Exporting",
-              "Create Development Environment For Frontends"
+              {
+                "name": "Implement Security Mechanisms",
+                "done": false
+              },
+              {
+                "name": "Implement Data Exporting",
+                "done": false
+              },
+              {
+                "name": "Create Development Environment For Frontends",
+                "done": true
+              },
           ],
           "17/05": [
-              "Create Frontends",
-              "Create Requirements For Reports"
+              {
+                "name": "Create Frontends",
+                "done": false
+              },
+              {
+                "name": "Create Requirements For Reports",
+                "done": false
+              },
           ],
           "24/05": [
-              "Explore Alarms' Requirements",
-              "Explore Authorization Mechanisms For Grafana",
-              "Explore Middleware Minification"
+              {
+                "name": "Explore Alarms' Requirements",
+                "done": false
+              },
+              {
+                "name": "Explore Authorization Mechanisms For Grafana",
+                "done": false
+              },
+              {
+                "name": "Explore Middleware Minification",
+                "done": false
+              },
           ],
           "31/05": [
-              "Create Technical Report",
-              "Implement Authorization In Grafana",
-              "Implement Alarms' Plugin"
+              {
+                "name": "Create Technical Report",
+                "done": false
+              },
+              {
+                "name": "Implement Authorization In Grafana",
+                "done": false
+              },
+              {
+                "name": "Implement Alarms' Plugin",
+                "done": false
+              },
           ],
           "14/06": [
-              "Rework Technical Report",
-              "Prepare students@deti Material"
+              {
+                "name": "Rework Technical Report",
+                "done": false
+              },
+              {
+                "name": "Prepare students@deti Material",
+                "done": false
+              },
           ],
           "21/06": [
-              "Prepare Final Presentation"
+              {
+                "name": "Prepare Final Presentation",
+                "done": false
+              },
           ]
       };
 
@@ -529,7 +662,13 @@ In the current market monitoring tools are typically <span class="text-orange">l
         if (calendar[''+date] != undefined){
           var list = "";
           calendar[''+date].forEach(element => {
-            list += '<p class="text-white"><span class="text-2xl text-orange font-bold">_</span> '+ element +'</p>';
+            list += '<p class="text-white"><span class="text-2xl text-orange font-bold">_</span> '+ element.name;
+            
+            if (element.done) {
+              list += '&nbsp;&nbsp;&nbsp;<span class="text-orange font-bold"><i class="fa-solid fa-check"></i></span>';
+           
+            }
+            list += '</p>';
           });
 
           $("#small-modal-title").html(date);
